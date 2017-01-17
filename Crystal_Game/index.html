@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<!-- Header -->
+	<div class="crystal-collector">
+		<h1>CrystalsCollector!</h1>
+	</div>
+
+	<!-- Instructions-->
+	<div class="instructions">
+		<p>You will be given a random number at the start of the game.</p>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+		<p>The value of each crystal is hidden from you until you click on it.</p>
+		<p>Each time when the game starts, the game will change the values of each crystal.</p>
+	</div>
+
+	<div class="row-2">
+		<!-- Random Number Box -->
+		<div class="random-number-box">
+			<p>Random Number: </br>
+			<span id="computerNumber"></span></p>
+		</div>
+
+		<!-- Wins & Losses Box-->
+		<div class="wins-losses">
+			<p>Wins: <span id="addWin"></span></p>
+			<p>Losses: <span id="addLoss"></span></p>
+		</div>
+	</div>
+
+	<!-- Crystal Images-->
+	<div class="crystal-images">
+		<button id="crystal01"><img src="images/crystal01.jpg"></button>
+		<button id="crystal02"><img src="images/crystal02.jpg"></button>
+		<button id="crystal03"><img src="images/crystal03.jpg"></button>
+		<button id="crystal04"><img src="images/crystal04.jpg"></button>
+	</div>
+
+	<!-- Total Score Box-->
+	<div class="your-total">
+		<p>Your total score is: </br>
+		<span id="yourTotalScore"></span></p>
+	</div>
+
+	<!-- Total Score Number -->
+	<div class="total-number">
+		
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
